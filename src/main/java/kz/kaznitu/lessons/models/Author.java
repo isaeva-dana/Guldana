@@ -9,13 +9,15 @@ public class Author {
     private long id ;
     private String firstName ;
     private String lastName ;
+    private String mamandyk ;
     private String email ;
 
     public Author(){}
 
-    public Author(String firstName, String lastName, String email) {
+    public Author(String firstName, String lastName, String mamandyk, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.lastName = mamandyk;
         this.email = email;
     }
 
@@ -41,6 +43,11 @@ public class Author {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getMamandyk() {  return mamandyk;   }
+
+    public void setMamandyk(String mamandyk) {  this.mamandyk = mamandyk;
     }
 
     public String getEmail() {
